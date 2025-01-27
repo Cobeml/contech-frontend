@@ -1,71 +1,75 @@
-import type { DatabaseQuery, GraphQueryResult } from './types';
+'use client';
 
-// Mock data for testing
-const MOCK_QUERY_RESULTS: Record<string, GraphQueryResult> = {
-  'concrete materials': {
-    nodes: [
-      {
-        id: 'concrete-1',
-        type: 'material',
-        data: {
-          label: 'Portland Cement',
-          details: 'Commonly used cement type',
-          category: 'Concrete',
-          expandable: true,
-        },
-        position: { x: 0, y: 0 },
-      },
-      {
-        id: 'reg-1',
-        type: 'regulation',
-        data: {
-          label: 'ISO 19000',
-          details: 'Sustainability standards',
-          category: 'Sustainability',
-          expandable: true,
-        },
-        position: { x: 100, y: 0 },
-      },
-    ],
-    edges: [
-      {
-        id: 'edge-1',
-        source: 'concrete-1',
-        target: 'reg-1',
-        type: 'compliesWith',
-      },
-    ],
-  },
-};
+import type { DatabaseQuery, GraphQueryResult } from './types';
 
 export async function processNaturalLanguageQuery(
   query: string,
 ): Promise<GraphQueryResult> {
-  // Simulate API delay
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  try {
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query,
+        format: `
+          Use markdown formatting for clarity:
+          - Use ## for section headers
+          - Use **bold** for important information
+          - Use *italics* for emphasis
+          - Use \`code\` for specific values or references
+          - Use > for important quotes or highlights
+          - Use bullet points for lists
+          - Use numbered lists for sequences
+          - Use --- for separating sections
+          - Use tables for structured data
+        `,
+      }),
+    });
 
-  // Mock response based on query keywords
-  for (const [keyword, result] of Object.entries(MOCK_QUERY_RESULTS)) {
-    if (query.toLowerCase().includes(keyword)) {
-      return result;
+    if (!response.ok) {
+      throw new Error('Failed to fetch response');
     }
-  }
 
-  // Default empty response
-  return { nodes: [], edges: [] };
+    const data = await response.json();
+
+    if (data.error) {
+      throw new Error(data.error);
+    }
+
+    // Return in GraphQueryResult format for compatibility
+    return {
+      nodes: [
+        {
+          id: 'response',
+          type: 'concept',
+          data: {
+            label: 'AI Response',
+            details: data.response,
+            category: 'response',
+            expandable: false,
+          },
+          position: { x: 0, y: 0 },
+        },
+      ],
+      edges: [],
+    };
+  } catch (error) {
+    console.error('API Error:', error);
+    throw new Error('Failed to process CO document query');
+  }
 }
 
 export async function translateToStructuredQuery(
   naturalLanguageQuery: string,
 ): Promise<DatabaseQuery> {
-  // This would normally call the LLM API
-  // Return mock structured query for now
   return {
-    tables: ['materials', 'regulations'],
+    tables: ['buildings', 'certificates_of_occupancy'],
     conditions: {
-      'materials.category': 'Concrete',
-      'regulations.type': 'Sustainability',
+      'buildings.bin': '1088864',
+      'certificates_of_occupancy.type': 'CO',
     },
-    relationships: ['material_regulation_compliance'],
+    relationships: ['building_co_documents'],
   };
 }

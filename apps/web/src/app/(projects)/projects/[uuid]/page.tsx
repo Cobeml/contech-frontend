@@ -1,10 +1,13 @@
 'use client';
 
+import { ChatSidebar } from '@/components/chat/ChatSidebar';
 import { Graph } from '@/components/knowledge-graph/Graph';
 import { LocationMap } from '@/components/map/Map';
+import { Button } from '@/components/ui/button';
 import tcoData from '@/data/tco-data.json';
 import { TCOData, type TCOLocation } from '@/types/tco';
 import { geocodeAddress } from '@/utils/geocoding';
+import { MessageSquare } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { ReactFlowProvider } from 'reactflow';
 
@@ -17,6 +20,7 @@ export default function ProjectPage() {
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [locations, setLocations] = useState<TCOLocation[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   useEffect(() => {
     async function loadLocations() {
@@ -48,6 +52,8 @@ export default function ProjectPage() {
     );
   }
 
+  const toggleChat = () => setIsChatOpen((prev) => !prev);
+
   return (
     <div className="relative h-[calc(100vh-5rem)] w-full">
       <div className="h-full w-full rounded-xl border bg-background/50 backdrop-blur-sm">
@@ -71,6 +77,26 @@ export default function ProjectPage() {
           />
         )}
       </div>
+
+      {selectedLocation && (
+        <>
+          {!isChatOpen && (
+            <Button
+              className="fixed bottom-4 right-4 z-50 rounded-full size-12 p-0"
+              onClick={toggleChat}
+              title="Open chat (Ctrl + Space)"
+            >
+              <MessageSquare className="size-5" />
+            </Button>
+          )}
+
+          <ChatSidebar
+            isOpen={isChatOpen}
+            onClose={() => setIsChatOpen(false)}
+            onToggle={toggleChat}
+          />
+        </>
+      )}
     </div>
   );
 }

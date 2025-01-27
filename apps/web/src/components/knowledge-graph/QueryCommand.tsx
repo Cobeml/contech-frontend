@@ -6,6 +6,7 @@ import { processNaturalLanguageQuery } from '@/lib/query/llm-client';
 import type { GraphQueryResult } from '@/lib/query/types';
 import { Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { toast } from 'sonner';
 
 interface QueryCommandProps {
   onQueryResult: (result: GraphQueryResult) => void;
@@ -15,6 +16,7 @@ export function QueryCommand({ onQueryResult }: QueryCommandProps) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -28,13 +30,23 @@ export function QueryCommand({ onQueryResult }: QueryCommandProps) {
   }, []);
 
   const handleQuery = async (value: string) => {
+    if (!value.trim()) return;
+
     setIsLoading(true);
+    setError(null);
+
     try {
       const result = await processNaturalLanguageQuery(value);
       onQueryResult(result);
       setOpen(false);
+      setQuery('');
     } catch (error) {
-      console.error('Query processing failed:', error);
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : 'An error occurred while processing your query';
+      setError(errorMessage);
+      toast.error(errorMessage);
     } finally {
       setIsLoading(false);
     }
@@ -49,7 +61,7 @@ export function QueryCommand({ onQueryResult }: QueryCommandProps) {
             value={query}
             onValueChange={setQuery}
             onKeyDown={(e) => {
-              if (e.key === 'Enter') {
+              if (e.key === 'Enter' && !isLoading) {
                 handleQuery(query);
               }
             }}
@@ -59,6 +71,11 @@ export function QueryCommand({ onQueryResult }: QueryCommandProps) {
               <div className="flex items-center justify-center p-4">
                 <Loader2 className="h-6 w-6 animate-spin" />
                 <span className="ml-2">Processing query...</span>
+              </div>
+            )}
+            {error && (
+              <div className="flex items-center justify-center p-4 text-red-500">
+                {error}
               </div>
             )}
           </CommandList>
