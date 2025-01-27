@@ -50,6 +50,7 @@
     "@clerk/themes": "^2.2.9",
     "@radix-ui/react-dialog": "^1.1.5",
     "@radix-ui/react-popover": "^1.1.5",
+    "@radix-ui/react-scroll-area": "^1.2.2",
     "@types/mapbox-gl": "^3.4.1",
     "@types/react": "^19.0.7",
     "cmdk": "^1.0.4",
