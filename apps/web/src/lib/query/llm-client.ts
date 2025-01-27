@@ -7,13 +7,23 @@ const MOCK_QUERY_RESULTS: Record<string, GraphQueryResult> = {
       {
         id: 'concrete-1',
         type: 'material',
-        data: { label: 'Portland Cement', category: 'Concrete' },
+        data: {
+          label: 'Portland Cement',
+          details: 'Commonly used cement type',
+          category: 'Concrete',
+          expandable: true,
+        },
         position: { x: 0, y: 0 },
       },
       {
         id: 'reg-1',
         type: 'regulation',
-        data: { label: 'ISO 19000', category: 'Sustainability' },
+        data: {
+          label: 'ISO 19000',
+          details: 'Sustainability standards',
+          category: 'Sustainability',
+          expandable: true,
+        },
         position: { x: 100, y: 0 },
       },
     ],
