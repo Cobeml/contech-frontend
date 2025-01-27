@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { processNaturalLanguageQuery } from '@/lib/query/llm-client';
 import { Loader2, MessageSquare, X } from 'lucide-react';
+import type React from 'react';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 
