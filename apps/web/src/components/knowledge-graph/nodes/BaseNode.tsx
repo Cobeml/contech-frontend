@@ -16,7 +16,7 @@ import {
 } from '@repo/ui/components/ui/card';
 import { Loader2 } from 'lucide-react';
 import { useState } from 'react';
-import type { KeyboardEvent as ReactKeyboardEvent } from 'react';
+import type { MouseEvent, KeyboardEvent as ReactKeyboardEvent } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Handle, type NodeProps, Position } from 'reactflow';
 
@@ -40,7 +40,7 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
   const [isLoading, setIsLoading] = useState(false);
   const [showPopover, setShowPopover] = useState(false);
 
-  const handleShowSummary = async (e: React.MouseEvent) => {
+  const handleShowSummary = async (e: MouseEvent) => {
     e.stopPropagation();
     setIsLoading(true);
     setShowPopover(true);
