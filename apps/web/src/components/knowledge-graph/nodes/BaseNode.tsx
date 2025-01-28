@@ -33,31 +33,19 @@ interface NodeData {
   category: string;
   expandable: boolean;
   link?: string;
+  summary?: string | null;
 }
 
 export function BaseNode({ data, type }: NodeProps<NodeData>) {
   const [isLoading, setIsLoading] = useState(false);
-  const [summary, setSummary] = useState<string | null>(null);
   const [showPopover, setShowPopover] = useState(false);
 
-  const handleSummarize = async () => {
+  const handleShowSummary = async (e: React.MouseEvent) => {
+    e.stopPropagation();
     setIsLoading(true);
-    setSummary(null);
-
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    const summaryIndex = (Math.floor(Math.random() * 4) + 1) as 1 | 2 | 3 | 4;
-    const summaries = await import('@/data/summary.json');
-    const selectedSummary =
-      summaries[
-        `summary${summaryIndex}` as
-          | 'summary1'
-          | 'summary2'
-          | 'summary3'
-          | 'summary4'
-      ];
-
-    setSummary(selectedSummary);
+    setShowPopover(true);
+    // Brief delay to show loading state
+    await new Promise((resolve) => setTimeout(resolve, 800));
     setIsLoading(false);
   };
 
@@ -93,7 +81,9 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
           className={cn(
             'min-w-[200px] transition-all duration-200',
             'hover:shadow-lg hover:scale-105',
-            nodeColors[type as keyof typeof nodeColors],
+            data.summary
+              ? nodeColors[type as keyof typeof nodeColors]
+              : 'bg-gray-100 dark:bg-gray-800',
           )}
         >
           <CardHeader className="p-4 pb-2">
@@ -116,18 +106,12 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
                 size="sm"
                 variant="secondary"
                 className="shadow-lg"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (!summary) {
-                    handleSummarize();
-                  }
-                  setShowPopover(true);
-                }}
+                onClick={handleShowSummary}
               >
                 {isLoading ? (
                   <>
-                    <Loader2 className="animate-spin" />
-                    Summarizing...
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Loading...
                   </>
                 ) : (
                   'View Summary'
@@ -140,14 +124,16 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
                   <div className="flex items-center justify-center h-full">
                     <Loader2 className="h-8 w-8 animate-spin" />
                   </div>
+                ) : data.summary ? (
+                  <div className="animate-in fade-in duration-500">
+                    <ReactMarkdown className="prose prose-sm dark:prose-invert prose-headings:text-base prose-p:text-sm prose-ul:text-sm">
+                      {data.summary}
+                    </ReactMarkdown>
+                  </div>
                 ) : (
-                  summary && (
-                    <div className="animate-in fade-in duration-500">
-                      <ReactMarkdown className="prose prose-sm dark:prose-invert prose-headings:text-base prose-p:text-sm prose-ul:text-sm">
-                        {summary}
-                      </ReactMarkdown>
-                    </div>
-                  )
+                  <div className="text-center text-muted-foreground">
+                    No summary available
+                  </div>
                 )}
               </ScrollArea>
             </PopoverContent>

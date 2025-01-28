@@ -4,6 +4,7 @@ import type { DatabaseQuery, GraphQueryResult } from './types';
 
 export async function processNaturalLanguageQuery(
   query: string,
+  buildingNumber: string,
 ): Promise<GraphQueryResult> {
   try {
     const response = await fetch('/api/chat', {
@@ -13,6 +14,7 @@ export async function processNaturalLanguageQuery(
       },
       body: JSON.stringify({
         query,
+        buildingNumber,
         format: `
           Use markdown formatting for clarity:
           - Use ## for section headers

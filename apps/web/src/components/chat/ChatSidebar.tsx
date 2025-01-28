@@ -17,9 +17,15 @@ interface ChatSidebarProps {
   isOpen: boolean;
   onClose: () => void;
   onToggle: () => void;
+  buildingNumber: string;
 }
 
-export function ChatSidebar({ isOpen, onClose, onToggle }: ChatSidebarProps) {
+export function ChatSidebar({
+  isOpen,
+  onClose,
+  onToggle,
+  buildingNumber,
+}: ChatSidebarProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -46,7 +52,7 @@ export function ChatSidebar({ isOpen, onClose, onToggle }: ChatSidebarProps) {
     setIsLoading(true);
 
     try {
-      const response = await processNaturalLanguageQuery(input);
+      const response = await processNaturalLanguageQuery(input, buildingNumber);
       const assistantMessage = {
         role: 'assistant' as const,
         content: response.nodes[0]?.data?.details || 'No response available',
@@ -86,7 +92,7 @@ export function ChatSidebar({ isOpen, onClose, onToggle }: ChatSidebarProps) {
           </Button>
         </div>
 
-        <div className="flex-1 overflow-auto pr-4 -mr-4 my-4 space-y-4 text-sm">
+        <div className="flex-1 overflow-auto my-4 space-y-4 text-sm">
           {messages.map((message, index) => (
             <div
               key={`${message.role}-${index}-${message.content.slice(0, 20)}`}
@@ -101,7 +107,7 @@ export function ChatSidebar({ isOpen, onClose, onToggle }: ChatSidebarProps) {
                   {message.content}
                 </div>
               ) : (
-                <div className="prose prose-invert max-w-[85%] prose-p:leading-relaxed prose-pre:bg-muted prose-p:text-sm prose-pre:text-sm font-['Source_Code_Pro']">
+                <div className="prose prose-invert w-full prose-p:leading-relaxed prose-pre:bg-muted prose-p:text-sm prose-pre:text-sm font-['Source_Code_Pro']">
                   <ReactMarkdown>{message.content}</ReactMarkdown>
                 </div>
               )}

@@ -13,13 +13,16 @@
     "recursive-update": "bun x npm-check-updates -u && bun install && turbo run update-deps --parallel"
   },
   "dependencies": {
+    "@pinecone-database/pinecone": "^4.1.0",
     "@repo/auth": "workspace:*",
     "@repo/ui": "workspace:*",
-    "@repo/ux": "workspace:*",
     "@repo/utils": "workspace:*",
+    "@repo/ux": "workspace:*",
     "@t3-oss/env-nextjs": "0.10.1",
+    "langchain": "^0.3.13",
     "next": "14.2.23",
     "next-app-theme": "0.1.11",
+    "openai": "^4.80.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zod": "3.23.8",

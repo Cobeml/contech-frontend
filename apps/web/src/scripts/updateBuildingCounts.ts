@@ -9,16 +9,20 @@ interface Building {
   violation_count?: number;
 }
 
-interface CoData {
-  bin: string;
-  certificate_number: string;
-  issue_date: string;
+interface CoResponse {
+  bin_num: string;
+  coa_records: Array<{
+    coa_number: string;
+    coa_file_link: string;
+  }>;
 }
 
-interface ViolationData {
-  bin: string;
-  violation_number: string;
-  issue_date: string;
+interface ViolationResponse {
+  bin_num: string;
+  violation_records: Array<{
+    violation_date: number;
+    violation_link: string;
+  }>;
 }
 
 async function readJsonFile<T>(filePath: string): Promise<T | null> {
@@ -51,16 +55,16 @@ async function main() {
       const buildingDir = path.join(baseDir, binNumber);
 
       // Read CO data
-      const coData = await readJsonFile<CoData[]>(
+      const coData = await readJsonFile<CoResponse>(
         path.join(buildingDir, 'co.json'),
       );
-      const coCount = coData?.length ?? 0;
+      const coCount = coData?.coa_records?.length ?? 0;
 
       // Read violations data
-      const violationsData = await readJsonFile<ViolationData[]>(
+      const violationsData = await readJsonFile<ViolationResponse>(
         path.join(buildingDir, 'violations.json'),
       );
-      const violationCount = violationsData?.length ?? 0;
+      const violationCount = violationsData?.violation_records?.length ?? 0;
 
       return {
         ...building,

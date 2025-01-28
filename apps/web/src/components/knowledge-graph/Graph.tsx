@@ -16,7 +16,7 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 import type { GraphQueryResult } from '@/lib/query/types';
 import { useGraphStore } from '@/store/graph-store';
-import { useCallback, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { QueryCommand } from './QueryCommand';
 import { SimpleEdge } from './edges/SimpleEdge';
 import { BaseNode } from './nodes/BaseNode';
@@ -55,6 +55,7 @@ export function Graph() {
   const { nodes, edges, setNodes, setEdges, addNodes, addEdges } =
     useGraphStore();
   const { getEdge } = useReactFlow();
+  const buildingNumber = useGraphStore((state) => state.selectedBuilding);
 
   const onNodesChange: OnNodesChange = useCallback(
     (changes) => setNodes(changes),
@@ -107,9 +108,22 @@ export function Graph() {
     }
   };
 
+  // Add useEffect to handle graph updates
+  useEffect(() => {
+    if (reactFlowRef.current) {
+      reactFlowRef.current.fitView({
+        padding: 0.2,
+        duration: 800,
+      });
+    }
+  }, []); // Remove nodes, edges from dependency array
+
   return (
     <div className="relative h-full w-full">
-      <QueryCommand onQueryResult={handleQueryResult} />
+      <QueryCommand
+        onQueryResult={handleQueryResult}
+        buildingNumber={buildingNumber}
+      />
       <div className="h-full w-full overflow-hidden p-4">
         <ReactFlow
           onInit={(instance) => {

@@ -3,31 +3,43 @@
 import mapboxgl from 'mapbox-gl';
 import { useEffect, useRef } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import { useGraphStore } from '@/store/graph-store';
 import type { TCOLocation } from '@/types/tco';
 
 interface MapProps {
   locations: TCOLocation[];
-  onLocationSelect: (address: string) => void;
+  onLocationSelect: (address: string, bin: string) => void;
 }
 
 export function LocationMap({ locations, onLocationSelect }: MapProps) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
+  const updateBuildingGraph = useGraphStore(
+    (state) => state.updateBuildingGraph,
+  );
 
   useEffect(() => {
     if (!mapContainer.current) return;
 
-    // Initialize map with a cleaner dark style
+    // Initialize map with updated center coordinates and zoom level for Lower Manhattan
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/dark-v11', // Changed to dark style
-      center: [-74.006, 40.7128],
-      zoom: 12,
+      style: 'mapbox://styles/mapbox/dark-v11',
+      center: [-74.006, 40.7505], // Centered more on Lower Manhattan
+      zoom: 13, // Increased zoom level
       accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
     });
 
     const currentMap = map.current;
     if (!currentMap) return;
+
+    // Add bounds restriction to keep focus on Manhattan
+    const bounds = new mapboxgl.LngLatBounds(
+      [-74.03, 40.7], // Southwest coordinates
+      [-73.97, 40.77], // Northeast coordinates
+    );
+
+    currentMap.setMaxBounds(bounds);
 
     // Add custom styling when map loads
     currentMap.on('load', () => {
@@ -35,7 +47,7 @@ export function LocationMap({ locations, onLocationSelect }: MapProps) {
       currentMap.setLayoutProperty('road-label', 'visibility', 'none');
       currentMap.setLayoutProperty('poi-label', 'visibility', 'none');
 
-      // Add a subtle building extrusion layer with darker colors
+      // Enhance building extrusions for better visibility
       currentMap.addLayer({
         id: 'building-extrusions',
         type: 'fill-extrusion',
@@ -47,12 +59,13 @@ export function LocationMap({ locations, onLocationSelect }: MapProps) {
             'interpolate',
             ['linear'],
             ['zoom'],
-            15,
+            14,
             0,
-            15.05,
+            14.05,
             ['get', 'height'],
           ],
-          'fill-extrusion-opacity': 0.6,
+          'fill-extrusion-opacity': 0.7,
+          'fill-extrusion-base': 0,
         },
       });
 
@@ -66,7 +79,7 @@ export function LocationMap({ locations, onLocationSelect }: MapProps) {
     });
 
     // Enhanced marker styling with new colors
-    for (const { address, lat, lng, tcoCount } of locations) {
+    for (const { address, lat, lng, tcoCount, bin } of locations) {
       const el = document.createElement('div');
       el.className =
         'cursor-pointer transition-all duration-200 hover:scale-110';
@@ -106,12 +119,16 @@ export function LocationMap({ locations, onLocationSelect }: MapProps) {
         .addTo(currentMap);
 
       el.addEventListener('click', () => {
-        onLocationSelect(address);
+        onLocationSelect(address, bin);
+        const buildingData = locations.find((loc) => loc.address === address);
+        if (buildingData?.bin) {
+          updateBuildingGraph(buildingData.bin);
+        }
       });
     }
 
     return () => currentMap?.remove();
-  }, [locations, onLocationSelect]);
+  }, [locations, onLocationSelect, updateBuildingGraph]);
 
   return (
     <div className="relative h-full w-full">
@@ -127,21 +144,21 @@ export function LocationMap({ locations, onLocationSelect }: MapProps) {
               className="h-4 w-4 rounded-full shadow-sm"
               style={{ background: 'rgba(255, 107, 0, 0.3)' }}
             />
-            <span className="text-sm text-gray-300">Low (1-3 COs)</span>
+            <span className="text-sm text-gray-300">Low (0-50 COs)</span>
           </div>
           <div className="flex items-center gap-3">
             <div
               className="h-4 w-4 rounded-full shadow-sm"
               style={{ background: 'rgba(255, 107, 0, 0.6)' }}
             />
-            <span className="text-sm text-gray-300">Medium (4-6 COs)</span>
+            <span className="text-sm text-gray-300">Medium (51-150 COs)</span>
           </div>
           <div className="flex items-center gap-3">
             <div
               className="h-4 w-4 rounded-full shadow-sm"
               style={{ background: 'rgba(255, 107, 0, 1)' }}
             />
-            <span className="text-sm text-gray-300">High (7+ COs)</span>
+            <span className="text-sm text-gray-300">High (150+ COs)</span>
           </div>
         </div>
       </div>

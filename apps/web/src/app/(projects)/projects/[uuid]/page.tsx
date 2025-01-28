@@ -4,38 +4,47 @@ import { ChatSidebar } from '@/components/chat/ChatSidebar';
 import { Graph } from '@/components/knowledge-graph/Graph';
 import { LocationMap } from '@/components/map/Map';
 import { Button } from '@/components/ui/button';
-import tcoData from '@/data/tco-data.json';
-import { TCOData, type TCOLocation } from '@/types/tco';
+import buildingsData from '@/data/buildings/buildings.json';
+import type { TCOLocation } from '@/types/tco';
 import { geocodeAddress } from '@/utils/geocoding';
 import { MessageSquare } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { ReactFlowProvider } from 'reactflow';
 
-interface RawLocation {
-  address: string;
-  tcoCount: number;
+interface Building {
+  has_number: string;
+  has_address: string | null;
+  has_city: string;
+  co_count: number;
+  violation_count: number;
 }
 
 export default function ProjectPage() {
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+  const [selectedBuilding, setSelectedBuilding] = useState<string | null>(null);
   const [locations, setLocations] = useState<TCOLocation[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   useEffect(() => {
     async function loadLocations() {
-      const rawLocations = (tcoData as unknown as { locations: RawLocation[] })
-        .locations;
+      const buildings = buildingsData as Building[];
       const geocodedLocations = await Promise.all(
-        rawLocations.map(async (loc) => {
-          const coords = await geocodeAddress(loc.address);
-          return {
-            address: loc.address,
-            tcoCount: loc.tcoCount,
-            lat: coords?.lat || 0,
-            lng: coords?.lng || 0,
-          };
-        }),
+        buildings
+          .filter(
+            (building): building is Building & { has_address: string } =>
+              building.has_address !== null,
+          )
+          .map(async (building) => {
+            const coords = await geocodeAddress(building.has_address);
+            return {
+              address: building.has_address,
+              tcoCount: building.co_count,
+              lat: coords?.lat || 0,
+              lng: coords?.lng || 0,
+              bin: building.has_number,
+            };
+          }),
       );
       setLocations(geocodedLocations);
       setIsLoading(false);
@@ -62,7 +71,10 @@ export default function ProjectPage() {
             <div className="relative h-full">
               <button
                 type="button"
-                onClick={() => setSelectedLocation(null)}
+                onClick={() => {
+                  setSelectedLocation(null);
+                  setSelectedBuilding(null);
+                }}
                 className="absolute top-4 left-4 z-10 px-4 py-2 bg-background/80 rounded-md hover:bg-background/90 transition-colors"
               >
                 ← Back to Map
@@ -73,12 +85,15 @@ export default function ProjectPage() {
         ) : (
           <LocationMap
             locations={locations}
-            onLocationSelect={(address) => setSelectedLocation(address)}
+            onLocationSelect={(address, bin) => {
+              setSelectedLocation(address);
+              setSelectedBuilding(bin);
+            }}
           />
         )}
       </div>
 
-      {selectedLocation && (
+      {selectedLocation && selectedBuilding && (
         <>
           {!isChatOpen && (
             <Button
@@ -94,6 +109,7 @@ export default function ProjectPage() {
             isOpen={isChatOpen}
             onClose={() => setIsChatOpen(false)}
             onToggle={toggleChat}
+            buildingNumber={selectedBuilding}
           />
         </>
       )}
@@ -108,7 +124,8 @@ async function addNewLocation(address: string) {
       address,
       lat: coordinates.lat,
       lng: coordinates.lng,
-      tcoCount: 1, // or whatever initial count
+      tcoCount: 1,
+      bin: '',
     };
     // Add to your locations array/state
   }

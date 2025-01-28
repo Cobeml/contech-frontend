@@ -10,9 +10,13 @@ import { toast } from 'sonner';
 
 interface QueryCommandProps {
   onQueryResult: (result: GraphQueryResult) => void;
+  buildingNumber: string;
 }
 
-export function QueryCommand({ onQueryResult }: QueryCommandProps) {
+export function QueryCommand({
+  onQueryResult,
+  buildingNumber,
+}: QueryCommandProps) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -36,7 +40,7 @@ export function QueryCommand({ onQueryResult }: QueryCommandProps) {
     setError(null);
 
     try {
-      const result = await processNaturalLanguageQuery(value);
+      const result = await processNaturalLanguageQuery(value, buildingNumber);
       onQueryResult(result);
       setOpen(false);
       setQuery('');

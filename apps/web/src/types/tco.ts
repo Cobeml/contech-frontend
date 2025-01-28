@@ -3,6 +3,7 @@ export interface TCOLocation {
   lat: number;
   lng: number;
   tcoCount: number;
+  bin: string;
 }
 
 export interface TCOData {

@@ -1,4 +1,4 @@
-import { initialEdges, initialNodes } from '@/lib/sample-graph-data';
+import { generateGraphData } from '@/lib/sample-graph-data';
 import {
   type Edge,
   type EdgeChange,
@@ -12,6 +12,7 @@ import { create } from 'zustand';
 interface GraphState {
   nodes: Node[];
   edges: Edge[];
+  selectedBuilding: string;
   selectedNode: string | null;
   searchQuery: string;
   isLoading: boolean;
@@ -22,11 +23,18 @@ interface GraphState {
   addNodes: (newNodes: Node[]) => void;
   addEdges: (newEdges: Edge[]) => void;
   setSelectedNode: (nodeId: string | null) => void;
+  updateBuildingGraph: (buildingNumber: string) => void;
 }
+
+// Get initial data for default building
+const defaultBuilding = '1088864';
+const { nodes: initialNodes, edges: initialEdges } =
+  generateGraphData(defaultBuilding);
 
 export const useGraphStore = create<GraphState>((set) => ({
   nodes: initialNodes,
   edges: initialEdges,
+  selectedBuilding: '',
   selectedNode: null,
   searchQuery: '',
   isLoading: false,
@@ -59,4 +67,9 @@ export const useGraphStore = create<GraphState>((set) => ({
       edges: [...state.edges, ...newEdges],
     })),
   setSelectedNode: (nodeId: string | null) => set({ selectedNode: nodeId }),
+  updateBuildingGraph: (buildingNumber: string) => {
+    set({ selectedBuilding: buildingNumber });
+    const { nodes, edges } = generateGraphData(buildingNumber);
+    set({ nodes, edges });
+  },
 }));
