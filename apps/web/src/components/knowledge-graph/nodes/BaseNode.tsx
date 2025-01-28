@@ -80,7 +80,7 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
         <Card
           className={cn(
             'min-w-[200px] transition-all duration-200',
-            'hover:shadow-lg hover:scale-105',
+            'hover:shadow-lg hover:scale-130',
             data.summary
               ? nodeColors[type as keyof typeof nodeColors]
               : 'bg-gray-100 dark:bg-gray-800',
