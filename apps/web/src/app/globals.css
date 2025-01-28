@@ -8,4 +8,61 @@
 
 .mapboxgl-popup-tip {
   @apply !border-t-gray-700;
+}
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 8s linear infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .laser {
+    position: absolute;
+    bottom: -20%;
+    width: 2px;
+    height: 140%;
+    background: linear-gradient(
+      to top,
+      transparent 0%,
+      theme('colors.primary.DEFAULT') 50%,
+      theme('colors.primary.DEFAULT') 51%,
+      transparent 100%
+    );
+    opacity: 0;
+    animation: laser-move 2s ease-in-out;
+    box-shadow: 0 0 8px theme('colors.primary.DEFAULT'),
+                0 0 12px theme('colors.primary.DEFAULT');
+  }
+
+  @keyframes laser-move {
+    0% {
+      opacity: 0;
+      transform: translateY(0) rotate(var(--rotation));
+    }
+    20% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-120%) rotate(var(--rotation));
+    }
+  }
 } 
