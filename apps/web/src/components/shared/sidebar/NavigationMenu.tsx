@@ -1,31 +1,32 @@
 'use client';
 
-import { Content } from '@/components/shared/sidebar/_content/Content';
-import { ClerkUser } from '@/components/shared/sidebar/_footer/ClerkUser';
-import { Heading } from '@/components/shared/sidebar/_header/Heading';
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
-  SidebarInset,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
   useSidebar,
 } from '@repo/ui/components/ui/sidebar';
-import { HardHatIcon } from 'lucide-react';
-import { type ComponentProps, useCallback, useRef } from 'react';
-const data = {
-  navContent: [
-    {
-      title: 'Projects',
-      icon: HardHatIcon,
-      isActive: true,
-      href: '/projects',
-    },
-  ],
-};
+import { FolderIcon, PlusIcon } from 'lucide-react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useCallback, useRef } from 'react';
+import { ClerkUser } from './_footer/ClerkUser';
+import { Heading } from './_header/Heading';
+import { useProjectNavigation } from './useProjectNavigation';
 
-export function NavigationMenu({ ...props }: ComponentProps<typeof Sidebar>) {
+export function NavigationMenu() {
+  const pathname = usePathname();
+  const router = useRouter();
+  const { projects } = useProjectNavigation();
   const { setOpen } = useSidebar();
+
+  // Restore hover behavior
   const closeTimer = useRef<NodeJS.Timeout | null>(null);
 
   const handleMouseLeave = useCallback(() => {
@@ -46,30 +47,55 @@ export function NavigationMenu({ ...props }: ComponentProps<typeof Sidebar>) {
       collapsible="icon"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      {...props}
     >
       <SidebarHeader>
         <Heading />
       </SidebarHeader>
+
       <SidebarContent>
-        <Content items={data.navContent} />
+        <SidebarGroup>
+          <SidebarGroupLabel asChild>
+            <SidebarMenuButton
+              onClick={() => router.push('/projects')}
+              isActive={pathname === '/projects'}
+              tooltip="All Projects"
+            >
+              Projects
+            </SidebarMenuButton>
+          </SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {projects.map((project) => (
+                <SidebarMenuItem key={project.projectId}>
+                  <SidebarMenuButton
+                    onClick={() =>
+                      router.push(`/projects/${project.projectId}`)
+                    }
+                    isActive={pathname === `/projects/${project.projectId}`}
+                    tooltip={project.name}
+                  >
+                    <FolderIcon />
+                    <span>{project.name}</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  onClick={() => router.push('/projects/new')}
+                  tooltip="New Project"
+                >
+                  <PlusIcon />
+                  <span>New Project</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
       </SidebarContent>
+
       <SidebarFooter>
         <ClerkUser />
       </SidebarFooter>
     </Sidebar>
-  );
-}
-
-export function ContentInset() {
-  const { setOpen } = useSidebar();
-
-  return (
-    <SidebarInset>
-      <div
-        className="absolute left-0 top-0 h-full w-4 cursor-pointer"
-        onMouseEnter={() => setOpen(false)}
-      />
-    </SidebarInset>
   );
 }

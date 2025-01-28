@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1737468039170,
-      "tag": "0000_round_amazoness",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1737555638063,
-      "tag": "0001_magenta_iron_lad",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1737556786467,
-      "tag": "0002_open_marvex",
+      "when": 1738014445854,
+      "tag": "0000_amusing_medusa",
       "breakpoints": true
     }
   ]

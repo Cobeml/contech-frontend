@@ -13,6 +13,7 @@ import {
 import { Skeleton } from '@ui/components/ui/skeleton';
 import { PlusIcon } from 'lucide-react';
 import type React from 'react';
+import { useEffect } from 'react';
 import WorkflowCard from './OverviewCard';
 
 /**
@@ -44,10 +45,35 @@ export default function WorkflowOverview() {
     error,
     setIsLoading,
     setError,
+    setProjects,
     createProject,
     saveProject,
   } = useProjectOverviewStore();
   const { user } = useUser();
+
+  useEffect(() => {
+    async function fetchProjects() {
+      if (!user?.id) return;
+
+      setIsLoading(true);
+      try {
+        const response = await fetch(`/api/getProjects?userId=${user.id}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch projects');
+        }
+        const data = await response.json();
+        setProjects(data);
+      } catch (err) {
+        setError(
+          err instanceof Error ? err.message : 'Failed to load projects',
+        );
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchProjects();
+  }, [user?.id, setIsLoading, setError, setProjects]);
 
   const handleProjectCreation = () => {
     if (!user?.id) {
@@ -56,6 +82,9 @@ export default function WorkflowOverview() {
     createProject({
       projectId: crypto.randomUUID(),
       userId: user.id,
+      imageUrl: '/map/nyc-default-map.webp',
+      name: 'New Project',
+      description: 'Project description',
     });
   };
 

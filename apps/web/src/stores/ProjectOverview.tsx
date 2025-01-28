@@ -21,6 +21,9 @@ interface ProjectOverviewState {
 
   // API Operations
   saveProject: () => Promise<void>;
+
+  // New state
+  setProjects: (projects: ProjectOverview[]) => void;
 }
 
 export const useProjectOverviewStore = create<ProjectOverviewState>()(
@@ -34,6 +37,9 @@ export const useProjectOverviewStore = create<ProjectOverviewState>()(
     },
     setError: (error: string | null) => {
       set({ error });
+    },
+    setProjects: (projects: ProjectOverview[]) => {
+      set({ projects });
     },
     createProject: (project?: Partial<ProjectOverview>) => {
       const newProject: ProjectOverview = {

@@ -25,6 +25,10 @@ interface ProjectCardProps {
 const WorkflowCard = ({ project }: ProjectCardProps) => {
   const { updateProject, saveProject } = useProjectOverviewStore();
   const router = useRouter();
+
+  // Use project image or default map
+  const imageUrl = '/map/nyc-default-map.webp';
+
   // Update Card
   const HandleUpdate = (updates: Partial<ProjectOverview>) => {
     updateProject(project.projectId, updates);
@@ -36,25 +40,28 @@ const WorkflowCard = ({ project }: ProjectCardProps) => {
   // Delete Card
   const HandleDelete = () => {};
 
-  // Handle Double Click
-  const HandleDoubleClick = () => {
-    console.log('Double Clicked');
+  // Handle Click (changed from HandleDoubleClick)
+  const handleClick = () => {
     saveProject();
     router.push(`/projects/${project.projectId}`);
   };
 
   return (
     <Card
-      className="w-full max-w-sm overflow-hidden group"
-      onDoubleClick={HandleDoubleClick}
+      className="w-full max-w-sm overflow-hidden group cursor-pointer"
+      onClick={handleClick}
     >
       <div className="relative">
         <div className="relative aspect-video">
           <Image
-            src={project.imageUrl}
-            alt={project.name}
-            fill
-            className="object-cover"
+            src={imageUrl}
+            alt={project.name ?? 'Project map'}
+            className="w-full h-full"
+            priority
+            width={800}
+            height={450}
+            unoptimized={imageUrl.startsWith('/map/')}
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
         </div>
         <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto">
@@ -79,13 +86,13 @@ const WorkflowCard = ({ project }: ProjectCardProps) => {
       <CardHeader className="p-4 pb-2">
         <CardTitle className="text-lg">
           <InlineEdit
-            value={project.name}
+            value={project.name ?? 'New Project'}
             onChange={(newName) => HandleUpdate({ name: newName })}
           />
         </CardTitle>
         <CardDescription>
           <InlineEdit
-            value={project.description}
+            value={project.description ?? 'Project description'}
             onChange={(newDescription) =>
               HandleUpdate({ description: newDescription })
             }
