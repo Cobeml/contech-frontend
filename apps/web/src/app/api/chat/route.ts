@@ -72,7 +72,7 @@ Content: ${match.metadata?.content ?? 'No content'}
       )
       .join('\n');
 
-    const completion = await openai.chat.completions.create({
+    const stream = await openai.chat.completions.create({
       messages: [
         {
           role: 'system',
@@ -92,18 +92,27 @@ Content: ${match.metadata?.content ?? 'No content'}
       model: process.env.OPENAI_MODEL || 'gpt-4',
       temperature: Number(process.env.OPENAI_TEMPERATURE) || 0.3,
       max_tokens: Number(process.env.OPENAI_MAX_TOKENS) || 4096,
+      stream: true,
     });
 
-    const response = completion.choices[0]?.message?.content;
+    const encoder = new TextEncoder();
+    const readable = new ReadableStream({
+      async start(controller) {
+        for await (const chunk of stream) {
+          const text = chunk.choices[0]?.delta?.content || '';
+          controller.enqueue(encoder.encode(text));
+        }
+        controller.close();
+      },
+    });
 
-    if (!response) {
-      return NextResponse.json(
-        { error: 'No response from OpenAI' },
-        { status: 500 },
-      );
-    }
-
-    return NextResponse.json({ response });
+    return new Response(readable, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        Connection: 'keep-alive',
+      },
+    });
   } catch (error) {
     console.error('API Error:', error);
     return NextResponse.json(

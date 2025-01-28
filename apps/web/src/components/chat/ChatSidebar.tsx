@@ -11,6 +11,7 @@ import ReactMarkdown from 'react-markdown';
 interface Message {
   role: 'user' | 'assistant';
   content: string;
+  isStreaming?: boolean;
 }
 
 interface ChatSidebarProps {
@@ -47,17 +48,52 @@ export function ChatSidebar({
     if (!input.trim() || isLoading) return;
 
     const userMessage = { role: 'user' as const, content: input };
-    setMessages((prev) => [...prev, userMessage]);
+    const assistantMessage = {
+      role: 'assistant' as const,
+      content: '',
+      isStreaming: true,
+    };
+
+    setMessages((prev) => [...prev, userMessage, assistantMessage]);
     setInput('');
     setIsLoading(true);
 
     try {
-      const response = await processNaturalLanguageQuery(input, buildingNumber);
-      const assistantMessage = {
-        role: 'assistant' as const,
-        content: response.nodes[0]?.data?.details || 'No response available',
-      };
-      setMessages((prev) => [...prev, assistantMessage]);
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: input, buildingNumber }),
+      });
+
+      if (!response.ok || !response.body) throw new Error('Stream error');
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value);
+        setMessages((prev) => {
+          const newMessages = [...prev];
+          const lastMessage = newMessages[newMessages.length - 1];
+          if (lastMessage.role === 'assistant') {
+            lastMessage.content += chunk;
+          }
+          return newMessages;
+        });
+      }
+
+      // Remove streaming flag when done
+      setMessages((prev) => {
+        const newMessages = [...prev];
+        const lastMessage = newMessages[newMessages.length - 1];
+        if (lastMessage.role === 'assistant') {
+          lastMessage.isStreaming = false;
+        }
+        return newMessages;
+      });
     } catch (error) {
       console.error('Failed to get response:', error);
       setMessages((prev) => [
@@ -108,7 +144,10 @@ export function ChatSidebar({
                 </div>
               ) : (
                 <div className="prose prose-invert w-full prose-p:leading-relaxed prose-pre:bg-muted prose-p:text-sm prose-pre:text-sm font-['Source_Code_Pro']">
-                  <ReactMarkdown>{message.content}</ReactMarkdown>
+                  <ReactMarkdown>{message.content || ' '}</ReactMarkdown>
+                  {message.isStreaming && (
+                    <span className="inline-block w-1.5 h-4 ml-0.5 bg-primary animate-pulse" />
+                  )}
                 </div>
               )}
             </div>

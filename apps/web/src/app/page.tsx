@@ -1,6 +1,7 @@
 import { BackgroundBeamsWithCollision } from '@/components/ui/background-beams-with-collision';
 import { Button } from '@/components/ui/button';
 import { teamMembers } from '@/data/team';
+import { SignInButton } from '@clerk/nextjs';
 import {
   AlertTriangle,
   BarChart3,
@@ -120,16 +121,15 @@ export default function Page() {
           </section>
 
           <section className="pb-8">
-            <Button
-              asChild
-              size="lg"
-              className="relative overflow-hidden bg-primary text-lg font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
-            >
-              <Link href="/projects" className="relative z-10">
+            <SignInButton mode="modal">
+              <Button
+                size="lg"
+                className="relative overflow-hidden bg-primary text-lg font-semibold transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
+              >
                 <span className="relative z-10">Get Started</span>
                 <div className="absolute inset-0 -z-10 bg-gradient-to-r from-primary via-primary/80 to-primary opacity-0 transition-opacity duration-300 hover:opacity-100" />
-              </Link>
-            </Button>
+              </Button>
+            </SignInButton>
           </section>
         </div>
       </BackgroundBeamsWithCollision>
