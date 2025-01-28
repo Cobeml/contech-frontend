@@ -2,6 +2,23 @@ import { OpenAIEmbeddings } from '@langchain/openai';
 import { Pinecone } from '@pinecone-database/pinecone';
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { z } from 'zod';
+
+const envSchema = z.object({
+  PINECONE_API_KEY: z.string().min(1),
+  OPENAI_API_KEY: z.string().min(1),
+});
+
+try {
+  envSchema.parse(process.env);
+} catch (error) {
+  console.error('Environment validation failed:', error);
+  throw new Error('Missing required environment variables');
+}
+
+if (!process.env.PINECONE_API_KEY || !process.env.OPENAI_API_KEY) {
+  throw new Error('Missing required environment variables');
+}
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -9,12 +26,27 @@ const openai = new OpenAI({
 });
 
 const pinecone = new Pinecone({
-  apiKey: process.env.PINECONE_API_KEY ?? '',
+  apiKey: process.env.PINECONE_API_KEY,
 });
 
 export async function POST(request: Request) {
   try {
+    // Validate environment variables
+    if (!process.env.OPENAI_API_KEY) {
+      return NextResponse.json(
+        { error: 'OpenAI API key not configured' },
+        { status: 500 },
+      );
+    }
+
     const { query, buildingNumber } = await request.json();
+
+    if (!query || !buildingNumber) {
+      return NextResponse.json(
+        { error: 'Missing required parameters' },
+        { status: 400 },
+      );
+    }
 
     // Create embedding for the query
     const embeddings = new OpenAIEmbeddings({
