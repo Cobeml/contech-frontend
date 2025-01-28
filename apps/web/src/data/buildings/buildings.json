@@ -1,24 +1,44 @@
 [
-  { "has_address": null, "has_city": "New York", "has_number": "1023449" },
+  {
+    "has_address": null,
+    "has_city": "New York",
+    "has_number": "1023449",
+    "co_count": 0,
+    "violation_count": 0
+  },
   {
     "has_address": "148 WEST 12 ST, 140 WEST 12 STREET, 148 WEST 12 STREET, 1 7 AVENUE, 155 WEST 11 STREET, 148 WEST 12 STREET, 150 WEST 12 STREET, 15 7 AVENUE, 144 WEST 12 STREET",
     "has_city": "New York",
-    "has_number": "1089806"
+    "has_number": "1089806",
+    "co_count": 0,
+    "violation_count": 0
   },
   {
     "has_address": "405 LEXINGTON AVENUE, 393 LEXINGTON AVENUE, 136 EAST 43 STREET, 139 EAST 42 STREET, 137 EAST 42 STREET, 413 LEXINGTON AVENUE",
     "has_city": "New York",
-    "has_number": "1036156"
+    "has_number": "1036156",
+    "co_count": 0,
+    "violation_count": 0
   },
   {
     "has_address": "130 WEST 12 STREET, 128 WEST 12 STREET, 126 WEST 12 STREET, 122 WEST 12 STREET, 130 WEST 12 STREET, 122 WEST 12 STREET",
     "has_city": "New York",
-    "has_number": "1088864"
+    "has_number": "1088864",
+    "co_count": 0,
+    "violation_count": 0
   },
   {
     "has_address": "FLATIRON BUILDING, 173 5 AVENUE, 175 5 AVENUE, 175 5TH AVE, 171 5 AVENUE, 171 FIFTH AVENUE, 953 BROADWAY, 1 EAST 22 STREET, 949 BROADWAY, 185 5 AVENUE, 175 5 AVE, 1 EAST 22 STREET, 175 5 AVE, 175 FIFTH AVENUE, 175 5TH AVENUE, 175 5 AVENUE, 175 FIFTH AV",
     "has_city": "New York",
-    "has_number": "1016278"
+    "has_number": "1016278",
+    "co_count": 0,
+    "violation_count": 0
   },
-  { "has_address": null, "has_city": "New York", "has_number": "1082908" }
+  {
+    "has_address": null,
+    "has_city": "New York",
+    "has_number": "1082908",
+    "co_count": 0,
+    "violation_count": 0
+  }
 ]

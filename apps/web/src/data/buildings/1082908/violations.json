@@ -1,0 +1,1577 @@
+{
+  "bin_num": "1082908",
+  "violation_records": [
+    {
+      "violation_date": 1177977600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38167724R"
+    },
+    {
+      "violation_date": 1319587200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934216J"
+    },
+    {
+      "violation_date": 1302652800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34741919P"
+    },
+    {
+      "violation_date": 1288742400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875135K"
+    },
+    {
+      "violation_date": 1318896000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=38218429L"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934187J"
+    },
+    {
+      "violation_date": 1318982400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934209L"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34909167H"
+    },
+    {
+      "violation_date": 1040083200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38133658M"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34952325H"
+    },
+    {
+      "violation_date": 1343779200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34980864P"
+    },
+    {
+      "violation_date": 1339027200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954203Z"
+    },
+    {
+      "violation_date": 903916800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078848Y"
+    },
+    {
+      "violation_date": 1220832000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190960Y"
+    },
+    {
+      "violation_date": 1308096000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34911185Y"
+    },
+    {
+      "violation_date": 1339545600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954206Y"
+    },
+    {
+      "violation_date": 1303084800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910653L"
+    },
+    {
+      "violation_date": 1222128000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190744J"
+    },
+    {
+      "violation_date": 1291161600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34872847P"
+    },
+    {
+      "violation_date": 1297814400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34890321J"
+    },
+    {
+      "violation_date": 1130889600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38155718M"
+    },
+    {
+      "violation_date": 906076800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079438X"
+    },
+    {
+      "violation_date": 1306281600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34890458K"
+    },
+    {
+      "violation_date": 1324425600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934830J"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934180R"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926177X"
+    },
+    {
+      "violation_date": 1346198400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34952513P"
+    },
+    {
+      "violation_date": 1344988800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948905M"
+    },
+    {
+      "violation_date": 904262400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079141P"
+    },
+    {
+      "violation_date": 1345593600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988013N"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926196L"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921144R"
+    },
+    {
+      "violation_date": 1314748800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34923393R"
+    },
+    {
+      "violation_date": 1323216000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934787N"
+    },
+    {
+      "violation_date": 903916800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078846K"
+    },
+    {
+      "violation_date": 903916800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078845Z"
+    },
+    {
+      "violation_date": 1347408000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34986918Z"
+    },
+    {
+      "violation_date": 1143417600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38157953L"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34858102J"
+    },
+    {
+      "violation_date": 713059200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34076016R"
+    },
+    {
+      "violation_date": 906076800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079436M"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954233J"
+    },
+    {
+      "violation_date": 1380499200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38228330K"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988000Y"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911069R"
+    },
+    {
+      "violation_date": 659750400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34044701Z"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079129M"
+    },
+    {
+      "violation_date": 1343779200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948767N"
+    },
+    {
+      "violation_date": 1338940800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34944464H"
+    },
+    {
+      "violation_date": 713059200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34076017Z"
+    },
+    {
+      "violation_date": 1179878400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38166875J"
+    },
+    {
+      "violation_date": 1305072000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910927J"
+    },
+    {
+      "violation_date": 1318982400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921368X"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34923381J"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34923394Z"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34898116R"
+    },
+    {
+      "violation_date": 1075075200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38144877X"
+    },
+    {
+      "violation_date": 1322006400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934703R"
+    },
+    {
+      "violation_date": 1306281600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34890457Z"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34923395K"
+    },
+    {
+      "violation_date": 1338940800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948255J"
+    },
+    {
+      "violation_date": 1334102400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=38221168J"
+    },
+    {
+      "violation_date": 1347408000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948996R"
+    },
+    {
+      "violation_date": 906336000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079443K"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063687K"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079128K"
+    },
+    {
+      "violation_date": 1312329600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911509L"
+    },
+    {
+      "violation_date": 1339027200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954202R"
+    },
+    {
+      "violation_date": 1282089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34860572R"
+    },
+    {
+      "violation_date": 1297814400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34890319K"
+    },
+    {
+      "violation_date": 1191974400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34610250M"
+    },
+    {
+      "violation_date": 1288742400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875133R"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921289H"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063684P"
+    },
+    {
+      "violation_date": 1318982400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934210Z"
+    },
+    {
+      "violation_date": 1345075200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34952340X"
+    },
+    {
+      "violation_date": 1339545600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954205M"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948461K"
+    },
+    {
+      "violation_date": 1222732800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190749Z"
+    },
+    {
+      "violation_date": 1282089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34860570N"
+    },
+    {
+      "violation_date": 1320796800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933885M"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34934183M"
+    },
+    {
+      "violation_date": 1221696000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190738N"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921422H"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063688M"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921287Y"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988003J"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948463Y"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948222N"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934185X"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921161Z"
+    },
+    {
+      "violation_date": 1284508800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34867672X"
+    },
+    {
+      "violation_date": 904262400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079138Y"
+    },
+    {
+      "violation_date": 1288742400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34872835H"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34934181Z"
+    },
+    {
+      "violation_date": 1314144000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34923389Y"
+    },
+    {
+      "violation_date": 713059200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34076019M"
+    },
+    {
+      "violation_date": 906336000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079439H"
+    },
+    {
+      "violation_date": 1289952000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875383J"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911068P"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921291R"
+    },
+    {
+      "violation_date": 1346803200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948958X"
+    },
+    {
+      "violation_date": 904262400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079140N"
+    },
+    {
+      "violation_date": 588988800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34012672M"
+    },
+    {
+      "violation_date": 1222214400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190746N"
+    },
+    {
+      "violation_date": 1309996800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911376R"
+    },
+    {
+      "violation_date": 713059200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34076021L"
+    },
+    {
+      "violation_date": 1316476800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=38217197R"
+    },
+    {
+      "violation_date": 1318982400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921371R"
+    },
+    {
+      "violation_date": 1222819200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38192125J"
+    },
+    {
+      "violation_date": 1312934400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34923375N"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063682L"
+    },
+    {
+      "violation_date": 1040083200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38133657K"
+    },
+    {
+      "violation_date": 1284508800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34845307K"
+    },
+    {
+      "violation_date": 904176000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079137M"
+    },
+    {
+      "violation_date": 1608249600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=39033659M"
+    },
+    {
+      "violation_date": 1228176000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38198538P"
+    },
+    {
+      "violation_date": 1340755200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34935343R"
+    },
+    {
+      "violation_date": 1289347200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875141R"
+    },
+    {
+      "violation_date": 1305072000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34911050R"
+    },
+    {
+      "violation_date": 906422400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079448J"
+    },
+    {
+      "violation_date": 1245628800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38204158L"
+    },
+    {
+      "violation_date": 1177977600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38167721L"
+    },
+    {
+      "violation_date": 1223251200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38192128P"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34922305N"
+    },
+    {
+      "violation_date": 1314144000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921133L"
+    },
+    {
+      "violation_date": 1328054400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34942211K"
+    },
+    {
+      "violation_date": 1130889600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38155719Y"
+    },
+    {
+      "violation_date": 1228262400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38198541X"
+    },
+    {
+      "violation_date": 1191974400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34610252X"
+    },
+    {
+      "violation_date": 1339545600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954207X"
+    },
+    {
+      "violation_date": 1422403200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38233341M"
+    },
+    {
+      "violation_date": 904003200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079126R"
+    },
+    {
+      "violation_date": 1124755200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38154758M"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34927864M"
+    },
+    {
+      "violation_date": 906336000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079441R"
+    },
+    {
+      "violation_date": 1411084800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38232715N"
+    },
+    {
+      "violation_date": 1222128000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190743H"
+    },
+    {
+      "violation_date": 713059200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34076018K"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948223P"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=38217196P"
+    },
+    {
+      "violation_date": 1318377600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921366M"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921420Y"
+    },
+    {
+      "violation_date": 1305072000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910929N"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948224R"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34906683K"
+    },
+    {
+      "violation_date": 1283904000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34860734K"
+    },
+    {
+      "violation_date": 1312934400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34922323R"
+    },
+    {
+      "violation_date": 1369180800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34999602P"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911382N"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34934179J"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910941X"
+    },
+    {
+      "violation_date": 1343174400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948662R"
+    },
+    {
+      "violation_date": 1345593600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988012L"
+    },
+    {
+      "violation_date": 1344988800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948903Z"
+    },
+    {
+      "violation_date": 906336000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079442Z"
+    },
+    {
+      "violation_date": 1181260800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38166889K"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921474J"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34923380H"
+    },
+    {
+      "violation_date": 1343606400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34952064Z"
+    },
+    {
+      "violation_date": 1314748800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34911159K"
+    },
+    {
+      "violation_date": 713059200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34076020J"
+    },
+    {
+      "violation_date": 1177977600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38167722N"
+    },
+    {
+      "violation_date": 1282089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34860571P"
+    },
+    {
+      "violation_date": 1309910400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911273Y"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948732N"
+    },
+    {
+      "violation_date": 1424736000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=35065716K"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34898440Z"
+    },
+    {
+      "violation_date": 1323216000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934788P"
+    },
+    {
+      "violation_date": 684460800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34061739Z"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911089Y"
+    },
+    {
+      "violation_date": 1131062400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38155720L"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926180R"
+    },
+    {
+      "violation_date": 1322006400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933887X"
+    },
+    {
+      "violation_date": 1242172800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38202582L"
+    },
+    {
+      "violation_date": 1345593600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948741P"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911072H"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911579R"
+    },
+    {
+      "violation_date": 1666310400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38273289K"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988001X"
+    },
+    {
+      "violation_date": 1312934400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34921125L"
+    },
+    {
+      "violation_date": 1348012800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948960P"
+    },
+    {
+      "violation_date": 1345593600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34952348K"
+    },
+    {
+      "violation_date": 1308182400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34903846M"
+    },
+    {
+      "violation_date": 1239667200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38198849M"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934186H"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926194H"
+    },
+    {
+      "violation_date": 1245628800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38204157J"
+    },
+    {
+      "violation_date": 1283904000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34860733Z"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079133P"
+    },
+    {
+      "violation_date": 1318377600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921364Z"
+    },
+    {
+      "violation_date": 1346198400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948743Z"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921143P"
+    },
+    {
+      "violation_date": 1181692800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38166897K"
+    },
+    {
+      "violation_date": 1312502400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911510Z"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34897635Y"
+    },
+    {
+      "violation_date": 1314748800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34911158Z"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34934178H"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079131L"
+    },
+    {
+      "violation_date": 1312934400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34922324Z"
+    },
+    {
+      "violation_date": 1343779200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948768P"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34898121L"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911380J"
+    },
+    {
+      "violation_date": 1343174400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954243N"
+    },
+    {
+      "violation_date": 656726400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34044577K"
+    },
+    {
+      "violation_date": 1283904000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34860735M"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954236P"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910937N"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948464X"
+    },
+    {
+      "violation_date": 1339545600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948257N"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921421X"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954237R"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948462M"
+    },
+    {
+      "violation_date": 1306886400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34911076P"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948731L"
+    },
+    {
+      "violation_date": 906076800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079437Y"
+    },
+    {
+      "violation_date": 1332892800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34942188L"
+    },
+    {
+      "violation_date": 1323216000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933850M"
+    },
+    {
+      "violation_date": 1309910400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911272M"
+    },
+    {
+      "violation_date": 684460800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34061737P"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954239K"
+    },
+    {
+      "violation_date": 1343174400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954244P"
+    },
+    {
+      "violation_date": 1289952000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34868017Y"
+    },
+    {
+      "violation_date": 1280880000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34858186X"
+    },
+    {
+      "violation_date": 1291161600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34867286H"
+    },
+    {
+      "violation_date": 1222819200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38192126L"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921472X"
+    },
+    {
+      "violation_date": 1041206400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38134751L"
+    },
+    {
+      "violation_date": 904262400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079139X"
+    },
+    {
+      "violation_date": 1347408000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948997Z"
+    },
+    {
+      "violation_date": 1323216000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933899N"
+    },
+    {
+      "violation_date": 1346198400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988017K"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34922306P"
+    },
+    {
+      "violation_date": 1285718400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34858474K"
+    },
+    {
+      "violation_date": 1318377600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934195J"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910938P"
+    },
+    {
+      "violation_date": 1344988800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988009K"
+    },
+    {
+      "violation_date": 1345593600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988011J"
+    },
+    {
+      "violation_date": 1285718400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34858473Z"
+    },
+    {
+      "violation_date": 1340150400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954215X"
+    },
+    {
+      "violation_date": 1242172800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38202583N"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910940Y"
+    },
+    {
+      "violation_date": 1380499200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38228329N"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079130J"
+    },
+    {
+      "violation_date": 1291161600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34867287J"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926197N"
+    },
+    {
+      "violation_date": 1323216000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934786L"
+    },
+    {
+      "violation_date": 1038960000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38135270P"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34909169L"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911381L"
+    },
+    {
+      "violation_date": 1318896000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=38218428J"
+    },
+    {
+      "violation_date": 1229299200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38199831Z"
+    },
+    {
+      "violation_date": 1424736000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=35065714R"
+    },
+    {
+      "violation_date": 903916800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078844R"
+    },
+    {
+      "violation_date": 1191974400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34610251Y"
+    },
+    {
+      "violation_date": 1318377600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934197N"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948221L"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34897634M"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911090L"
+    },
+    {
+      "violation_date": 1343174400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948661P"
+    },
+    {
+      "violation_date": 1314748800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34857821L"
+    },
+    {
+      "violation_date": 1410912000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38232714L"
+    },
+    {
+      "violation_date": 1282089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34749740L"
+    },
+    {
+      "violation_date": 1222214400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190747P"
+    },
+    {
+      "violation_date": 1223251200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38192129R"
+    },
+    {
+      "violation_date": 904176000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079136K"
+    },
+    {
+      "violation_date": 1338940800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34944465J"
+    },
+    {
+      "violation_date": 1319587200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934217L"
+    },
+    {
+      "violation_date": 1177977600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38167723P"
+    },
+    {
+      "violation_date": 1314144000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921135P"
+    },
+    {
+      "violation_date": 1343174400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954245R"
+    },
+    {
+      "violation_date": 1035763200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38134000K"
+    },
+    {
+      "violation_date": 1319587200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921374M"
+    },
+    {
+      "violation_date": 1424736000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=35065715Z"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34898441K"
+    },
+    {
+      "violation_date": 1576972800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=35453608H"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911088M"
+    },
+    {
+      "violation_date": 1305072000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34911051Z"
+    },
+    {
+      "violation_date": 1222128000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190742X"
+    },
+    {
+      "violation_date": 1231286400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38199844H"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921290P"
+    },
+    {
+      "violation_date": 1348012800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948962Z"
+    },
+    {
+      "violation_date": 1289952000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875384L"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926195J"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911580Y"
+    },
+    {
+      "violation_date": 1297814400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34890320H"
+    },
+    {
+      "violation_date": 1312934400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34921126N"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921354P"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34923379K"
+    },
+    {
+      "violation_date": 1322006400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934702P"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921352L"
+    },
+    {
+      "violation_date": 684460800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34061736N"
+    },
+    {
+      "violation_date": 1324425600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933867Z"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34935322H"
+    },
+    {
+      "violation_date": 1305072000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34911052K"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911071X"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921473H"
+    },
+    {
+      "violation_date": 1326844800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933368Y"
+    },
+    {
+      "violation_date": 906422400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079444M"
+    },
+    {
+      "violation_date": 1351036800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34990161H"
+    },
+    {
+      "violation_date": 1185494400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38163788H"
+    },
+    {
+      "violation_date": 903916800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078843P"
+    },
+    {
+      "violation_date": 1285718400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34872650L"
+    },
+    {
+      "violation_date": 1308096000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911186X"
+    },
+    {
+      "violation_date": 1222128000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190745L"
+    },
+    {
+      "violation_date": 906422400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079447H"
+    },
+    {
+      "violation_date": 1312329600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34922313N"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988002H"
+    },
+    {
+      "violation_date": 1309910400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911274X"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079132N"
+    },
+    {
+      "violation_date": 1310515200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911383P"
+    },
+    {
+      "violation_date": 684460800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34061730M"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063685R"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34909165Y"
+    },
+    {
+      "violation_date": 1289347200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875140P"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063686Z"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910939R"
+    },
+    {
+      "violation_date": 1041206400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38134750J"
+    },
+    {
+      "violation_date": 1318982400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934208J"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921423J"
+    },
+    {
+      "violation_date": 1323216000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933898L"
+    },
+    {
+      "violation_date": 1315353600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921142N"
+    },
+    {
+      "violation_date": 669945600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34049937H"
+    },
+    {
+      "violation_date": 1338940800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948256L"
+    },
+    {
+      "violation_date": 1346803200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988019Y"
+    },
+    {
+      "violation_date": 906681600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079449L"
+    },
+    {
+      "violation_date": 1286323200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34858369Z"
+    },
+    {
+      "violation_date": 1289347200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34868006Z"
+    },
+    {
+      "violation_date": 1341964800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954232H"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921419R"
+    },
+    {
+      "violation_date": 1345593600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948740N"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926179J"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921353N"
+    },
+    {
+      "violation_date": 1322006400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34933886Y"
+    },
+    {
+      "violation_date": 1422403200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38233340K"
+    },
+    {
+      "violation_date": 1343606400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34951798N"
+    },
+    {
+      "violation_date": 1344988800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948904K"
+    },
+    {
+      "violation_date": 904003200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078850N"
+    },
+    {
+      "violation_date": 1288742400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34875134Z"
+    },
+    {
+      "violation_date": 904003200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079127Z"
+    },
+    {
+      "violation_date": 1221696000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38190737L"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954238Z"
+    },
+    {
+      "violation_date": 1245628800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38204159N"
+    },
+    {
+      "violation_date": 1283904000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34860736Y"
+    },
+    {
+      "violation_date": 1344988800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988010H"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34926178H"
+    },
+    {
+      "violation_date": 1306886400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34911075N"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079134R"
+    },
+    {
+      "violation_date": 1038960000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38135271R"
+    },
+    {
+      "violation_date": 1177977600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38167720J"
+    },
+    {
+      "violation_date": 1318377600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934196L"
+    },
+    {
+      "violation_date": 1338768000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34948315M"
+    },
+    {
+      "violation_date": 1312329600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911508J"
+    },
+    {
+      "violation_date": 1280880000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34858185Y"
+    },
+    {
+      "violation_date": 874454400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38063683N"
+    },
+    {
+      "violation_date": 904003200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078849X"
+    },
+    {
+      "violation_date": 1343779200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34980863N"
+    },
+    {
+      "violation_date": 1309305600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34909168J"
+    },
+    {
+      "violation_date": 1342569600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34954235N"
+    },
+    {
+      "violation_date": 1343779200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34980862L"
+    },
+    {
+      "violation_date": 684460800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34061741H"
+    },
+    {
+      "violation_date": 1313539200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911578P"
+    },
+    {
+      "violation_date": 684460800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34061735L"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=38217199K"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34934182K"
+    },
+    {
+      "violation_date": 1317772800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34934188L"
+    },
+    {
+      "violation_date": 1348012800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948961R"
+    },
+    {
+      "violation_date": 621475200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34029046X"
+    },
+    {
+      "violation_date": 904089600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079135Z"
+    },
+    {
+      "violation_date": 906422400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079445Y"
+    },
+    {
+      "violation_date": 1317168000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34934184Y"
+    },
+    {
+      "violation_date": 1305676800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34906685Y"
+    },
+    {
+      "violation_date": 1283299200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=34860729X"
+    },
+    {
+      "violation_date": 1315958400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921288X"
+    },
+    {
+      "violation_date": 1190160000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38168848N"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34911070Y"
+    },
+    {
+      "violation_date": 1357171200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=38224276K"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34858103L"
+    },
+    {
+      "violation_date": 1339545600,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948258P"
+    },
+    {
+      "violation_date": 1346803200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34948957Y"
+    },
+    {
+      "violation_date": 906422400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079446X"
+    },
+    {
+      "violation_date": 906336000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=7&ecbin=38079440P"
+    },
+    {
+      "violation_date": 1308700800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=4&ecbin=34858104N"
+    },
+    {
+      "violation_date": 1316563200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=3&ecbin=34921355R"
+    },
+    {
+      "violation_date": 1318982400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=2&ecbin=34921369H"
+    },
+    {
+      "violation_date": 664502400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=34049744L"
+    },
+    {
+      "violation_date": 1344384000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34948733P"
+    },
+    {
+      "violation_date": 1303084800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34910654N"
+    },
+    {
+      "violation_date": 1338940800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=1&ecbin=34944463X"
+    },
+    {
+      "violation_date": 1346803200,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=0&ecbin=34988020L"
+    },
+    {
+      "violation_date": 1190160000,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=6&ecbin=38168849P"
+    },
+    {
+      "violation_date": 903916800,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=8&ecbin=38078847M"
+    },
+    {
+      "violation_date": 1288742400,
+      "violation_link": "https://a810-bisweb.nyc.gov/bisweb/ECBQueryByNumberServlet?requestid=5&ecbin=34867995K"
+    }
+  ]
+}
