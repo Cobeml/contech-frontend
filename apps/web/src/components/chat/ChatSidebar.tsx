@@ -78,7 +78,7 @@ export function ChatSidebar({
         setMessages((prev) => {
           const newMessages = [...prev];
           const lastMessage = newMessages[newMessages.length - 1];
-          if (lastMessage.role === 'assistant') {
+          if (lastMessage && lastMessage.role === 'assistant') {
             lastMessage.content += chunk;
           }
           return newMessages;
@@ -89,7 +89,7 @@ export function ChatSidebar({
       setMessages((prev) => {
         const newMessages = [...prev];
         const lastMessage = newMessages[newMessages.length - 1];
-        if (lastMessage.role === 'assistant') {
+        if (lastMessage && lastMessage.role === 'assistant') {
           lastMessage.isStreaming = false;
         }
         return newMessages;
