@@ -67,6 +67,8 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
         type="button"
         className={cn(
           'px-4 py-2 shadow-lg rounded-lg border bg-card w-full text-left',
+          'transition-all duration-300 ease-in-out transform-gpu',
+          'hover:scale-150 origin-center',
           data.link && 'cursor-pointer hover:bg-accent',
         )}
         onClick={handleNodeClick}
@@ -79,8 +81,7 @@ export function BaseNode({ data, type }: NodeProps<NodeData>) {
         />
         <Card
           className={cn(
-            'min-w-[200px] transition-all duration-200',
-            'hover:shadow-lg hover:scale-130',
+            'min-w-[200px]',
             data.summary
               ? nodeColors[type as keyof typeof nodeColors]
               : 'bg-gray-100 dark:bg-gray-800',
